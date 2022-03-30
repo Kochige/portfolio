@@ -1,0 +1,123 @@
+@import url(sanitize.css);
+
+body {
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.container {
+  max-width: 800px;
+  box-shadow: 0 0 10px gray;
+  margin: 0 auto;
+  background-color: white;
+}
+
+header {
+  background-color: #422814;
+  padding: 10px;
+  color: white;
+  font-family: "Sriracha", cursive;
+}
+
+header h1 {
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.information h1 {
+  margin: 0 10px 10px 0;
+  font-size: 18px;
+  float: left;
+}
+
+.type {
+  display: inline;
+  color: white;
+  background-color: #e35a4d;
+  padding: 3px 5px;
+  font-size: 80%;
+}
+
+.description {
+  clear: left;
+}
+.description img {
+  float: left;
+  margin: 0 10px 10px 0;
+  transition-property: opacity, box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.description img:hover {
+  opacity: 0.5;
+  box-shadow: 0 0 10px black;
+}
+
+.content {
+  padding: 20px;
+}
+
+.songs {
+  margin: 0 0 20px;
+  clear: left;
+}
+
+.songs h2 {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  background-color: #e6e4dd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.songs ol {
+  padding: 0;
+  margin: 0;
+  list-style: decimal inside;
+}
+
+.songs li {
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  float: left;
+  padding: 5px 10px;
+}
+
+.songs a {
+  color: #666;
+  /* text-decoration: none; */
+}
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+  .description img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 12px;
+  }
+
+  .songs li {
+    width: inherit;
+    float: none;
+  }
+}
